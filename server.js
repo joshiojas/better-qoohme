@@ -27,15 +27,7 @@ app.use(
 
 app.use(passport.initialize());
 app.use(passport.session());
-username = process.env.MONGO_USERNAME;
-password = process.env.MONGO_PASSWORD;
-var uri =
-  "mongodb+srv://" +
-  username +
-  ":" +
-  password +
-  "@binance.enrl5bz.mongodb.net/?retryWrites=true&w=majority&appName=binance";
-
+var uri = process.env.MONGO_URI;
 mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 mongoose.set("useCreateIndex", true);
 
