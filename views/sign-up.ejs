@@ -1,0 +1,24 @@
+<%- include('partials/header') %>
+
+<h1 class="centered">
+    Sign Up
+</h1>
+
+
+
+<form action="/sign-up" method="post" class="centered">
+<p class="centered"></p>
+
+<input type="text" name="username" class="form-control centered-form" placeholder="Username"><br><br>
+<input type="password" name="password" class="form-control centered-form" placeholder="Password"><br>
+<button class="home" type="submit">Sign Up</button>
+
+</p>
+</form>
+
+<p class="centered" style="color: red;">
+    <%= error %> 
+</p>
+
+
+<%- include('partials/footer') %>

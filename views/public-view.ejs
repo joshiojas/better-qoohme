@@ -1,0 +1,60 @@
+<%- include('partials/header') %>
+<link rel="stylesheet" href="/css/styles.css">
+
+<h1 class="heading">
+<a class="view" href="/<%=user%>/ask"> Ask <%=user%> </a>
+</h1>
+
+
+    <a class="small" style="color: #A683E3"  href="/login">Login</a>
+    <a class="small" style="color: #A683E3"  href="/sign-up">Create your own</a>
+
+
+<% posts.forEach(post => { %>
+    
+    <a class="redirect" href="/view/<%=post.id%>">
+<div class="card">
+    <div class="top">
+        <div class="name">
+            <% if (post.post.length > 30) { %>
+                <%= post.post.substring(0,40) + "..." %> 
+            <% } else { %>
+             <%= post.post %> 
+             <% } %>
+             
+        </div>
+        </div>
+        <div class="bottom">
+            <p class="info">
+                <% if (post.answer.length > 30) { %>
+                    <%=post.answer.substring(0,20)%>
+                <% } else { %>
+                    <%= post.answer %> 
+                    <% } %>
+                
+            </p>
+        </div>
+    </div>
+</div>
+</a>
+</div>
+<% }) %>
+
+<!-- 
+<p class="centered">
+    <% posts.forEach(post => { %>
+        
+        <div class="view">
+            <div class="heading"></div>
+            <a class="posts" href="/view/<%=post.id%>">
+                Q: <%=post.post%><br>
+            Ans: <%=post.answer.substring(0,20)%><br>
+        
+        </a>
+        </div>
+        </div>
+
+    <% }) %>
+</p> -->
+
+<%- include('partials/footer') %>

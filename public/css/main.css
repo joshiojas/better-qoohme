@@ -1,0 +1,149 @@
+body {
+    background-color: #E4E9FD;
+    background-image: -webkit-linear-gradient(65deg, #A683E3 50%, #E4E9FD 50%);
+    min-height: 1200px;
+    font-family: 'Helvetica Neue';
+}
+
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+.navbar-nav  li a:hover {
+    color: #A683E3 !important;
+}
+
+h1 {
+    align-items: center;
+    color: #2C2E43;
+    font-size: 42px;
+    text-align: justify;
+    margin-bottom: 2cm;
+}
+
+.centered {
+    margin-top: 1cm;
+    text-align: center;
+    align-items: center;
+    color: #2C2E43;
+}
+
+h2.centered{
+    size: 28px;
+    color: #2C2E43;
+}
+
+p.centered{
+    align-items: center;
+    text-align: center;
+    size: 18px;
+    color: black;
+    background-color: #E4E9FD;
+    min-height: 12%;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    word-wrap: normal;
+}
+
+.centered-form {
+    align-items: center;
+    text-align: center;
+    size: 18px;
+    color: black;
+    background-color: #E4E9FD;
+    min-height: 12%;
+    width: 30%;
+    margin-left: 35%;
+    margin-right: 35%;
+    word-wrap: normal;
+}
+
+
+div.right{
+    align-items: left;
+    align-self: left;
+    text-align: right;
+    margin-right: 5%;
+}
+
+button.home{
+    align-items: right;
+    background-color: #5D65FC;
+    color: #CADADB;
+    font-family: 'Helvetica Neue';
+    border-radius: 0.4cm;
+    width: 1in;
+    min-height: 0.4in;   
+}
+
+button.home:hover {
+    background-color: #E4E9FD;
+    color: #2C2E43;
+    font-family: 'Helvetica Neue';
+    box-shadow: 0 16px 20px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+p.invisible {
+    font-size: 0%;
+}
+
+
+div.view{
+    margin-top: 2%;
+    align-items: center;
+    text-align: center;
+    size: 18px;
+    color: black;
+    background-color: #E4E9FD;
+
+}
+
+.view{
+    background-color: #E4E9FD;
+    color: #2C2E43;
+    font-family: 'Helvetica Neue';
+    letter-spacing: normal;
+    border-radius: 5%;
+}
+
+button.view:hover{
+    background-color: #E4E9FD;
+    color: #A683E3;
+    font-family: 'Helvetica Neue';
+    letter-spacing: normal;
+    border-radius: 5%;
+}
+
+.heading{
+    size: 28px;
+    color: #2C2E43;
+}
+
+.posts { 
+    size: 18px;
+    letter-spacing: normal;
+    color: #2C2E43;
+}
+
+a.redirect {
+    margin-left: 1cm;
+    margin-right: 1cm;
+    margin-top: 1.5cm;
+    color: black;
+    letter-spacing: 2px;
+}
+
+a.redirect:hover{
+    
+    margin-left: 1cm;
+    margin-right: 1cm;
+    margin-top: 1.5cm;
+    color: black;
+    letter-spacing: 2px;
+}

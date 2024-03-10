@@ -1,0 +1,36 @@
+<%- include('partials/header') %>
+
+
+
+
+
+<h1 class="centered">
+    Mecadelle
+</h1>
+
+<h2 class="centered">
+    What to Do
+</h2>
+
+<p class="centered">
+    
+    Create an account by Signing Up you can then share the link you recieve so people can ask you Questions Anonymosly, 
+    you can then Answer them right there or share it on social media like Instagram Stories. <br>
+    To Start Sign-up and share the link 
+
+<br><br>
+    <a class="heading" href="/sign-up">Sign-Up</a>
+    <a class="heading" href="/login">Login</a>
+    <!-- <br><br><button class="home" onclick="sign()">Sign-Up</button> -->
+    <!-- <button class="home" onclick="login()">Log In</button> -->
+
+</p>
+<script>
+    function sign(){
+        location.replace("/sign-up")
+    }
+    function login(){
+        location.replace("/login")
+    }
+</script>
+<%- include('partials/footer') %>

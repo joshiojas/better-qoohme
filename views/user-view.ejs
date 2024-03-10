@@ -1,0 +1,39 @@
+<%- include('partials/header') %>
+
+<h1 class="centered">
+    <a class="heading" href="/<%=user%>/profile">
+<%= user %> 
+</a>
+</h1>
+<% if (flash) { %>
+    <%= flash %> 
+    <% } %>
+
+<p class="centered">
+    <% posts.forEach(post => { %>
+        
+    <div class="view">
+
+        <a class="posts" href="/<%=user%>/<%=post.id%>">
+            <%= post.posts %>
+        </a>
+    </div>
+
+    <% }) %>
+</p>
+
+<script>
+    function copy(){
+        var copyText = "http://www.mecadelle.live/<%=user%>"
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+   /* Copy the text inside the text field */
+        navigator.clipboard.writeText(copyText);
+
+  /* Alert the copied text */
+        alert("Copied the text: " + copyText.value);
+    }
+</script>
+
+<%- include('partials/footer') %>

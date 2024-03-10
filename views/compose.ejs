@@ -1,0 +1,23 @@
+<%- include('partials/header') %>
+<h1 class="centered">
+<a class="heading" href="<%=userUrl%>">
+<%= user %>
+</a> 
+</h1>
+<% if (reply===true) { %>
+    <h2 class="centered">
+    <p class="centered">
+        <%= post.posts %> 
+    </p>
+</h2>
+<% } %>
+
+<form class="centered" action="<%=url%>" method="POST">
+
+<textarea cols="40" rows="3" placeholder="<%=compose%>" name="compose"></textarea><br>
+<button type="submit" class="home">Submit</button>
+
+</form>
+
+
+<%- include('partials/footer') %>
